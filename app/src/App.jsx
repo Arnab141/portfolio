@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div className="body">
       <Navbar menu={menu} setmenu={setmenu}/>
-      <Header/>
+      {/* <Header/> */}
       <About/>
       <Project/>
       <Contact/>
