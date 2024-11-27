@@ -1,0 +1,133 @@
+/* General Reset */
+body, ul, li, a, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+}
+
+/* Navbar Container */
+.navbar {
+  width: 100%;
+  background-color: #2c3e50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Brand/Name */
+.navbar p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ecf0f1;
+  margin: 0;
+}
+
+/* Navbar Menu */
+.navbar-menu {
+  display: none;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+/* Menu Items */
+.navbar-menu li {
+  position: relative;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover and Active States */
+.navbar-menu li a:hover,
+.navbar-menu li.active a {
+  background-color: #1abc9c;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+
+
+/* media menu */
+
+
+.media-menu{
+display: none;
+}
+.media-menu{
+  display: flex;
+  text-align: center;
+}
+.fa{
+  color: #ffffff;
+}
+/* Media Navbar Menu */
+.media-navbar-menu{
+  display: none;
+}
+.media-navbar-menu-open {
+  display: flex;
+  list-style: none;
+  flex-direction: column; 
+
+}
+
+.media-navbar-menu-open li a{
+  margin: 10px;
+  padding: 3px;
+  color: #e5eded;
+}
+
+
+
+
+/* Hover Effect */
+.media-navbar-menu-open li a:hover,
+.media-navbar-menu-open li.media-activ a {
+  border-bottom: 3px solid #1abc9c;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .media-menu {
+    display: block;
+    position: relative;
+  }
+  .navbar-menu{
+    display: none;
+  }
+  
+}
+
+@media screen and (min-width: 769px) {
+  .media-menu {
+    display: none; /* Hide menu for larger screens */
+  
+  }
+ 
+}
+
+
+
+
+
