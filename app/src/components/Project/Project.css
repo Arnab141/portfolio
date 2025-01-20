@@ -1,5 +1,4 @@
-
-   .project {
+.project {
     background-color: #2b3e50;
     padding: 50px 20px;
     display: flex;
@@ -7,9 +6,9 @@
     align-items: center;
     text-align: center;
     color: #f1f1f1;
-}
-
-.project h3 {
+  }
+  
+  .project h3 {
     color: #ffffff;
     font-size: 2rem;
     text-transform: uppercase;
@@ -17,9 +16,9 @@
     border-bottom: 3px solid #4caf50;
     padding-bottom: 10px;
     display: inline-block;
-}
-
-.project .main {
+  }
+  
+  .project .main {
     width: 90%;
     max-width: 1200px;
     background-color: #34404e;
@@ -32,9 +31,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid layout for multiple elements */
     gap: 20px; /* Spacing between each .ele */
-}
-
-.ele {
+  }
+  
+  .ele {
     background-color: #2b3e50;
     color: #fff;
     border-radius: 15px;
@@ -42,35 +41,42 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
-}
-
-.ele:hover {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initially offset */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .ele.show {
+    opacity: 1; /* When visible */
+    transform: translateY(0); /* Reset offset */
+  }
+  
+  .ele:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.ele img {
+  }
+  
+  .ele img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
-}
-
-.ele p {
+  }
+  
+  .ele p {
     font-size: 1rem;
     line-height: 1.6;
     color: #e1e1e1;
     margin-bottom: 20px;
-}
-
-.ele .btn {
+  }
+  
+  .ele .btn {
     display: flex;
     justify-content: space-between;
-}
-
-.ele .btn a {
+  }
+  
+  .ele .btn a {
     background-color: #4caf50;
     border: none;
     color: #fff;
@@ -80,34 +86,35 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 45%;
-}
-
-.ele .btn a:hover {
+  }
+  
+  .ele .btn a:hover {
     background-color: #388e3c;
-}
-
-.ele .btn a#btn2 {
+  }
+  
+  .ele .btn a#btn2 {
     background-color: #2196f3;
-}
-
-.ele .btn a#btn2:hover {
+  }
+  
+  .ele .btn a#btn2:hover {
     background-color: #1976d2;
-}
-
-#p {
+  }
+  
+  #p {
     font-size: 1.2rem;
     font-weight: bold;
     color: #ffffff;
     text-align: center;
-}
-#line1-container {
+  }
+  
+  #line1-container {
     background-color: #2b3e50;
     padding: 20px 0;
     display: flex;
     justify-content: center;
-}
-
-#line1 {
+  }
+  
+  #line1 {
     border: none;
     height: 4px;
     background-color: #4caf50;
@@ -115,4 +122,5 @@
     width: 80%;
     max-width: 800px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
+  }
+  

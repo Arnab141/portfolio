@@ -2,9 +2,11 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    background-color:#2b3e50;
+    color: #333;
+    scroll-behavior: smooth;
 }
-  
+
 /* Header section styling */
 .header {
     background-color: #2b3e50;
@@ -16,6 +18,7 @@ body {
     padding: 100px 100px;
     height: auto;
     text-align: left;
+    position: relative;
 }
 
 /* Left section styling */
@@ -30,6 +33,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0 0 10px;
+    animation: fadeInDown 1s ease-in-out;
 }
 
 .tagline {
@@ -53,17 +57,17 @@ body {
 }
 
 .resume-link:hover {
-    background-color: #9d9b9b;
+    background-color: #16a085;
 }
 
 /* Right section styling */
 .right img {
     height: 400px;
     border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-
-
+/* Horizontal line styling */
 #line1-container {
     background-color: #2b3e50;
     padding: 20px 0;
@@ -84,32 +88,32 @@ body {
 /* Media Query for phones */
 @media screen and (max-width: 768px) {
     .header {
-        flex-direction: column; /* Stack items vertically */
-        padding: 50px 20px; /* Reduce padding */
-        gap: 20px; /* Smaller gap between sections */
-        text-align: center; /* Center-align text */
+        flex-direction: column;
+        padding: 50px 20px;
+        gap: 20px;
+        text-align: center;
     }
     
     .left {
-        align-items: center; /* Center-align text for smaller screens */
+        align-items: center;
     }
     
     .intro {
-        font-size: 1.2rem; /* Reduce font size for intro text */
+        font-size: 1.2rem;
     }
     
     .tagline {
-        font-size: 1rem; /* Adjust tagline font size */
-        max-width: 90%; /* Ensure text doesn’t stretch too wide */
-        text-align: center; /* Center-align text */
+        font-size: 1rem;
+        max-width: 90%;
+        text-align: center;
     }
     
     .resume-link {
-        font-size: 0.9rem; /* Slightly smaller button text */
-        padding: 8px 15px; /* Adjust padding for smaller buttons */
+        font-size: 0.9rem;
+        padding: 8px 15px;
     }
     
     .right img {
-        height: 200px; /* Reduce image size */
+        height: 200px;
     }
 }
